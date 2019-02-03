@@ -18,6 +18,15 @@
 #+REVEAL_PLUGINS: (search zoom)
 #+REVEAL_TITLE_SLIDE: <h1 class="title">%t</h1><h3 class="subtitle">%s</h3><h2 class="author">%a</h2><h2 class="date">%d</h2>
 
+# The following is necessary for PDF export.
+# Note that even without PDF export, the used bibliography file needs
+# to be declared for org-ref, which can happen in various ways.
+# First, org-ref understands the addbibresource commend below.
+# Second, addbibresource:references.bib could be used before
+# the printbibliography command if PDF export is not necessary.
+# Third, org-ref-default-bibliography can be customized.
+#+LATEX_HEADER: \usepackage[backend=biber,style=alphabetic]{biblatex}
+#+LATEX_HEADER: \addbibresource{references.bib}
 
 #+TITLE: Sample presentation with bibliography
 #+SUBTITLE: (Press ~?~ for help; ~n~ and ~p~ for next and previous slide)
