@@ -45,7 +45,7 @@
    - Load an Org file and export it to HTML
      - Make sure that reveal.js is available in your current directory
        (e.g., as sub-directory or symbolic link)
-     - Load "Readme.org" (coming with org-re-reveal)
+     - Load "README.org" (coming with org-re-reveal-ref)
      - Export to HTML: Press ~C-c C-e r r~ (write HTML file) or
        ~C-c C-e r b~ (write HTML file and open in browser)
 
