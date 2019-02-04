@@ -63,7 +63,7 @@
 ;; - `org-ref-bib-html' is set to the empty string
 ;; - `org-ref-printbibliography-cmd' is configured not to produce a
 ;;   heading (as the bibliography slide has a heading already)
-;; `org-ref-ref-html' is configured to link to the bibliography slide.
+;; - `org-ref-ref-html' is configured to link to the bibliography slide
 
 ;;; Code:
 (require 'org-ref)
