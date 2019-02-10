@@ -7,7 +7,7 @@
 
 ;; Author: Jens Lechtenbörger
 ;; URL: https://gitlab.com/oer/org-re-reveal-ref
-;; Version: 0.9.0
+;; Version: 0.9.1
 ;; Package-Requires: ((emacs "24.4") (org-ref "1.1.1") (org-re-reveal "0.9.3"))
 ;; Keywords: hypermedia, tools, slideshow, presentation, bibliography
 
@@ -33,7 +33,8 @@
 ;; bibliography slide based on package `org-ref'.  Thus, `cite'
 ;; commands of `org-ref' are translated into hyperlinks to the
 ;; bibliography slide upon export by `org-re-reveal'.  Also, export to
-;; PDF via LaTeX with Org's usual export functionality works.
+;; PDF via LaTeX and export to HTML with Org's usual export
+;; functionality work.
 ;;
 ;; * Install
 ;; 0. Install reveal.js: https://revealjs.com/
@@ -63,7 +64,7 @@
 ;; - `org-ref-bib-html' is set to the empty string
 ;; - `org-ref-printbibliography-cmd' is configured not to produce a
 ;;   heading (as the bibliography slide has a heading already)
-;; - `org-ref-ref-html' is configured to link to the bibliography slide
+;; - `org-ref-ref-html' is configured to link to the bibliography
 
 ;;; Code:
 (require 'org-ref)
@@ -84,10 +85,11 @@ Set to empty string if no class should be assigned."
 (defun org-re-reveal-ref-filter-bib-para (text backend info)
   "Replace incorrect p tags around bibliography.
 This function is added to `org-export-filter-paragraph-functions',
-where TEXT is the paragraph, BACKEND is checked for `re-reveal', and INFO
-is unused."
+where TEXT is the paragraph, BACKEND is checked for `re-reveal' or
+`html', and INFO is unused."
   (ignore info) ; Silence byte compiler
-  (when (and (org-export-derived-backend-p backend 're-reveal)
+  (when (and (or (org-export-derived-backend-p backend 're-reveal)
+		 (org-export-derived-backend-p backend 'html))
 	     (string-match-p "<p>[ \n]*<ul" text))
     (replace-regexp-in-string
      "<p>[ \n]*<ul" "<ul"
