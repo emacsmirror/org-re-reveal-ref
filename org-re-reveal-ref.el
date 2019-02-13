@@ -48,8 +48,9 @@
 ;;    (a) Make sure that reveal.js is available in your current directory
 ;;        (e.g., as sub-directory or symbolic link).
 ;;    (b) Load "README.org" (coming with org-re-reveal-ref).
-;;    (c) Export to HTML: Press "C-c C-e r r" (write HTML file) or
-;;        "C-c C-e r b" (write HTML file and open in browser)
+;;    (c) Export to HTML: Key bindings depend upon version of org-re-reveal.
+;;        Starting with version 1.0.0, press "C-c C-e v r" (write HTML file)
+;;        or "C-c C-e v b" (write HTML file and open in browser)
 ;;
 ;; * Customizable options
 ;; Customizable variables are `org-re-reveal-ref-bib' and
