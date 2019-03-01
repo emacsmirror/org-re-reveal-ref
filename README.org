@@ -46,7 +46,7 @@
      - Make sure that reveal.js is available in your current directory
        (e.g., as sub-directory or symbolic link)
      - Load "README.org" (coming with org-re-reveal-ref)
-     - Export to HTML: Press ~C-c C-e v r~ (write HTML file) or
+     - Export to HTML: Press ~C-c C-e v v~ (write HTML file) or
        ~C-c C-e v b~ (write HTML file and open in browser)
 
 ** Rationale
