@@ -35,7 +35,7 @@
 
 * Introduction
 ** Installation
-   - Install [[https://revealjs.com/][reveal.js]]
+   - Install [[https://revealjs.com/][reveal.js]] and ~org-re-reveal~ (from MELPA or [[https://gitlab.com/oer/org-re-reveal/][GitLab]])
    - Activate ~org-re-reveal-ref~
      - Place this directory into your load path or install it from
        [[https://melpa.org/#/getting-started][MELPA]]
