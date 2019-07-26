@@ -38,8 +38,11 @@
 ;;
 ;; * Install
 ;; 0. Install reveal.js: https://revealjs.com/
-;; 1. Activate org-re-reveal-ref.
-;;    (a) Place this directory into your load path or install it from MELPA
+;; 1. Install org-re-reveal and org-re-reveal-ref, either from MELPA
+;;    or GitLab:
+;;    - https://gitlab.com/oer/org-re-reveal/
+;;    - https://gitlab.com/oer/org-re-reveal-ref/
+;;    (a) Place their directories into your load path or install from MELPA
 ;;        (https://melpa.org/#/getting-started).
 ;;    (b) Load package manually ("M-x load-library" followed by
 ;;        "org-re-reveal-ref") or place "(require 'org-re-reveal-ref)" into
