@@ -31,7 +31,7 @@
 #+TITLE: Sample presentation with bibliography
 #+SUBTITLE: (Press ~?~ for help; ~n~ and ~p~ for next and previous slide)
 #+AUTHOR: Jens Lechtenbörger
-#+DATE: February 2019
+#+DATE: July 2019
 
 * Introduction
 ** Installation
@@ -50,13 +50,18 @@
        ~C-c C-e v b~ (write HTML file and open in browser)
 
 ** Rationale
-   - Teaching resources should be free and open
+   - Teaching and learning resources should be free and open
+     - In support of
+       [[https://www.sdg4education2030.org/the-goal][Sustainable Development Goal 4 (SDG 4)]]
      - [[https://en.wikipedia.org/wiki/Open_educational_resources][Open Educational Resources (OER)]]
-     - See cite:HWS+10 for technical and legal requirements
-   - My requirements (see cite:Lec19)
+       - See cite:HWS+10 for technical and legal requirements of OER
+   - My OER requirements (see cite:Lec19)
      - (Re-) Usable with [[https://en.wikipedia.org/wiki/Free_and_open-source_software][FLOSS]]
      - Following paradigm of single sourcing (see cite:Roc01)
      - Platform independent, also offline use
+     - Support proper license attribution beyond copy&paste
+       - Tool support with [[https://gitlab.com/oer/emacs-reveal][emacs-reveal]],
+         which embeds ~org-re-reveal-ref~ (see cite:Lec19b,Lec19c)
 
 * Reveal.js presentations
 ** Org-re-reveal
