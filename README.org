@@ -77,11 +77,18 @@
      - Many more
 
 ** Org-re-reveal-ref
-   - This package adds support for citations and bibliography to
+   - Package ~org-re-reveal-ref~ adds support for citations and bibliography to
      ~org-re-reveal~
-   - Use citations of [[https://github.com/jkitchin/org-ref][org-ref]]
-     as usual
+     - Use citations of [[https://github.com/jkitchin/org-ref][org-ref]]
+       as usual
      - With export to reveal.js and PDF
+   - FLOSS software bundle [[https://gitlab.com/oer/emacs-reveal][emacs-reveal]]
+     contains ~org-re-reveal-ref~
+     - Configuration of additional plugins for reveal.js, in
+       particular audio explanations
+     - Automatic license attribution for OER figures
+     - See [[https://oer.gitlab.io/OS/][OER presentations for a course on operating systems]]
+       for an example
 
 * Conclusions
 ** Summary
