@@ -31,7 +31,7 @@
 #+TITLE: Sample presentation with bibliography
 #+SUBTITLE: (Press ~?~ for help; ~n~ and ~p~ for next and previous slide)
 #+AUTHOR: Jens Lechtenbörger
-#+DATE: July 2019
+#+DATE: August 2019
 
 * Introduction
 ** Installation
