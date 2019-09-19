@@ -14,7 +14,7 @@
 #+OPTIONS: timestamp:nil
 
 #+REVEAL_TRANS: fade
-#+REVEAL_THEME: simple
+#+REVEAL_THEME: white
 #+REVEAL_PLUGINS: (search zoom)
 #+REVEAL_TITLE_SLIDE: <h1 class="title">%t</h1><h3 class="subtitle">%s</h3><h2 class="author">%a</h2><h2 class="date">%d</h2>
 
