@@ -7,7 +7,7 @@
 
 ;; Author: Jens Lechtenbörger
 ;; URL: https://gitlab.com/oer/org-re-reveal-ref
-;; Version: 0.9.1
+;; Version: 0.10.0
 ;; Package-Requires: ((emacs "24.4") (org-ref "1.1.1") (org-re-reveal "0.9.3"))
 ;; Keywords: hypermedia, tools, slideshow, presentation, bibliography
 
@@ -66,6 +66,7 @@
 ;; Furthermore, the following variables of `org-ref' are changed by
 ;; this package:
 ;; - `org-ref-bib-html' is set to the empty string
+;; - `org-ref-bib-html-sorted' is set to t
 ;; - `org-ref-printbibliography-cmd' is configured not to produce a
 ;;   heading (as the bibliography slide has a heading already)
 ;; - `org-ref-ref-html' is configured to link to the bibliography
@@ -102,6 +103,7 @@ where TEXT is the paragraph, BACKEND is checked for `re-reveal' or
 	     #'org-re-reveal-ref-filter-bib-para)
 
 (setq org-ref-bib-html ""
+      org-ref-bib-html-sorted t
       org-ref-printbibliography-cmd "\\printbibliography[heading=none]"
       org-ref-ref-html (concat
 			"<a"
