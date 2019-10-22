@@ -21,7 +21,7 @@
 # The following is necessary for PDF export.
 # Note that even without PDF export, the used bibliography file needs
 # to be declared for org-ref, which can happen in various ways.
-# First, org-ref understands the addbibresource commend below.
+# First, org-ref understands the printbibliography command below.
 # Second, addbibresource:references.bib could be used before
 # the printbibliography command if PDF export is not necessary.
 # Third, org-ref-default-bibliography can be customized.
