@@ -2,13 +2,13 @@
 ;; -*- Mode: Emacs-Lisp -*-
 ;; -*- coding: utf-8 -*-
 
-;; Copyright (C) 2018-2019 Jens Lechtenbörger
+;; Copyright (C) 2018-2020 Jens Lechtenbörger
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
 ;; Author: Jens Lechtenbörger
 ;; URL: https://gitlab.com/oer/org-re-reveal-ref
-;; Version: 0.10.0
-;; Package-Requires: ((emacs "24.4") (org-ref "1.1.1") (org-re-reveal "0.9.3"))
+;; Version: 1.0.0
+;; Package-Requires: ((emacs "25.1") (org-ref "1.1.1") (org-re-reveal "0.9.3"))
 ;; Keywords: hypermedia, tools, slideshow, presentation, bibliography
 
 ;;; License:
