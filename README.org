@@ -35,7 +35,8 @@
 
 * Introduction
 *Beware!* This file uses [[https://orgmode.org/][Org mode]] syntax.
-Its headers (with Org commands and comments) are not displayed on GitLab.
+Some headers (with Org commands and comments) are not displayed
+(properly) on GitLab.
 
 Use the source.
 
