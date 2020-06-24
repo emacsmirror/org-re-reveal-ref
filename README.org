@@ -1,8 +1,8 @@
 # Local IspellDict: en
 #+STARTUP: showeverything
 
-# Copyright (C) 2019 Jens Lechtenbörger
-# SPDX-License-Identifier: GPL-3.0-or-later
+#+SPDX-FileCopyrightText: 2019-2020 Jens Lechtenbörger <https://lechten.gitlab.io/#me>
+#+SPDX-License-Identifier: GPL-3.0-or-later
 
 # Neither generate table of contents nor section numbers
 #+OPTIONS: toc:nil num:nil
@@ -31,9 +31,14 @@
 #+TITLE: Sample presentation with bibliography
 #+SUBTITLE: (Press ~?~ for help; ~n~ and ~p~ for next and previous slide)
 #+AUTHOR: Jens Lechtenbörger
-#+DATE: August 2019
+#+DATE: June 2020
 
 * Introduction
+*Beware!* This file uses [[https://orgmode.org/][Org mode]] syntax.
+Its headers (with Org commands and comments) are not displayed on GitLab.
+
+Use the source.
+
 ** Installation
    - Install [[https://revealjs.com/][reveal.js]] and ~org-re-reveal~ (from MELPA or [[https://gitlab.com/oer/org-re-reveal/][GitLab]])
    - Activate ~org-re-reveal-ref~
@@ -48,6 +53,22 @@
      - Load "README.org" (coming with org-re-reveal-ref)
      - Export to HTML: Press ~C-c C-e v v~ (write HTML file) or
        ~C-c C-e v b~ (write HTML file and open in browser)
+
+** Configuration
+   - Package ~org-ref~ needs to know what bibliography file(s) to use
+   - Several options
+     - First, org-ref understands the command ~printbibliography~ used
+       in the source file of this README
+       - For PDF export, this file also contains additional LaTeX
+         headers
+
+         #+begin_src latex
+#+LATEX_HEADER: \usepackage[backend=biber,style=alphabetic]{biblatex}
+#+LATEX_HEADER: \addbibresource{references.bib}
+         #+end_src
+     - Second, ~addbibresource:references.bib~ can be used before
+       ~printbibliography~ if PDF export is not necessary
+     - Third, ~org-ref-default-bibliography~ can be customized
 
 ** Rationale
    - Teaching and learning resources should be free and open
