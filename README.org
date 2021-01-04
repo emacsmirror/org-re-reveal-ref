@@ -4,8 +4,8 @@
 #+SPDX-FileCopyrightText: 2019-2021 Jens Lechtenbörger <https://lechten.gitlab.io/#me>
 #+SPDX-License-Identifier: GPL-3.0-or-later
 
-[[https://stable.melpa.org/#/org-re-reveal-ref][file:https://stable.melpa.org/packages/org-re-reveal-badge-ref.svg]]
-[[https://melpa.org/#/org-re-reveal-ref][file:https://melpa.org/packages/org-re-reveal-badge-ref.svg]]
+[[https://stable.melpa.org/#/org-re-reveal-ref][https://stable.melpa.org/packages/org-re-reveal-badge-ref.svg]]
+[[https://melpa.org/#/org-re-reveal-ref][https://melpa.org/packages/org-re-reveal-badge-ref.svg]]
 
 # Neither generate table of contents nor section numbers
 #+OPTIONS: toc:nil num:nil
