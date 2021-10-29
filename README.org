@@ -34,7 +34,7 @@
 #+TITLE: Sample presentation with bibliography
 #+SUBTITLE: (Press ~?~ for help; ~n~ and ~p~ for next and previous slide)
 #+AUTHOR: Jens Lechtenbörger
-#+DATE: June 2020
+#+DATE: October 2021
 
 * Introduction
 *Beware!* This file uses [[https://orgmode.org/][Org mode]] syntax.
@@ -42,6 +42,10 @@ Some headers (with Org commands and comments) are not displayed
 (properly) on GitLab.
 
 Use the source.
+
+*Note:* The citation syntax introduced by Org mode 9.5 is supported by
+the alternative package
+[[https://gitlab.com/oer/org-re-reveal-citeproc][org-re-reveal-citeproc]].
 
 ** Installation
    - Install [[https://revealjs.com/][reveal.js]] and ~org-re-reveal~ (from MELPA or [[https://gitlab.com/oer/org-re-reveal/][GitLab]])
